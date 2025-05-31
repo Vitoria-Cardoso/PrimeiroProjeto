@@ -132,3 +132,126 @@ button:hover {
     color: #333;
     text-align: left;
 }
+
+.footer {
+    background-color: #57290B;
+    color: #F0F0F0;
+    padding: 32px 0;
+    text-align: center;
+
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    gap: 32px;
+}
+
+.footer-logo {
+    height: 60px;
+}
+
+.footer-contact {
+    font-family: "Open Sans", sans-serif;
+    color: #EBDACC;
+    text-decoration: none;
+}
+
+/* --- Estilos: QUEM SOMOS --- */ 
+
+.banner-quem-somos{
+    background-image: url(assets/BackGround_QuemSomos.png);
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner-quem-somos h1{
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    color: #EBDACC;
+    font-size: 80px;
+}
+
+.quem-somos{
+    display: flex;
+    align-items: flex-start; /* Alinhados pelo topo*/
+    justify-content: space-between; /* Alinha o conteúdo horizontalmente */
+    gap: 40px;
+    padding: 60px 80px;
+    background-color: #F5F3ED;
+    min-height: 500px;
+}
+
+.quem-somos-conteudo{
+    flex: 1;
+    max-width: 600px;
+    color: #1F0C00;
+}
+
+.quem-somos-conteudo h2{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.quem-somos-conteudo p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+}
+
+.contato-links {
+    background: #F5F3ED;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contato-links h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #1F0C00;
+    margin-bottom: 24px;
+}
+
+.contato-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contato-links li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contato-links a {
+    color: #1F0C00;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    transition: color 0.2s;
+}
+
+
+.icon {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+}
