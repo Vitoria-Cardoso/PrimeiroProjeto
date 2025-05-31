@@ -85,19 +85,50 @@ header {
     text-align: left;
 }
 
-.hero button {
+button {
     background-color: #8f542e;
     color: #f0f0f0;
     font-family: "Open Sans", sans-serif;
-    margin-top: 12px;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 10px 20px;
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 32px;
     border: none;
     border-radius: 5px;
     transition: background 0.3s;
 }
 
-.hero button:hover {
+button:hover {
     background-color: #cf7b44;
+}
+
+.sobre-nos{
+    display: flex;
+    align-items: flex-start; /* Alinhados pelo topo*/
+    justify-content: space-between; /* Alinha o conteúdo horizontalmente */
+    gap: 40px;
+    padding: 60px 80px;
+    background-color: #F5F3ED;
+    min-height: 500px;
+}
+
+.sobre-nos-conteudo{
+    flex: 1;
+    max-width: 600px;
+    color: #1F0C00;
+}
+
+.sobre-nos-conteudo h2{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.sobre-nos-conteudo p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #333;
+    text-align: left;
 }
