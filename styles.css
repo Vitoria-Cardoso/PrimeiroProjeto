@@ -241,8 +241,11 @@ button:hover {
     gap: 8px;
 }
 
+
+
 .contato-links a {
     color: #1F0C00;
+    align-items: center;
     text-decoration: none;
     font-size: 20px;
     font-family: "Open Sans", sans-serif;
@@ -250,7 +253,7 @@ button:hover {
 }
 
 
-.icon {
+.contato-links img {
     width: 28px;
     height: 28px;
     vertical-align: middle;
