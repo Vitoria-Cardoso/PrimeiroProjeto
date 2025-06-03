@@ -380,3 +380,86 @@ button:hover {
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
 }
+
+
+/* --- Estilos: Servicos e produtos --- */ 
+
+.banner-produtos .hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-produtos{
+    width: 100%;
+    background-image: url(assets/BackGround_Produtos.png);
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+
+}
+
+.banner-produtos h1{
+    white-space: nowrap;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    color: #57290B;
+    font-size: 80px;
+}
+
+.livros {
+    padding: 60px 0 40px 0;
+    background: #F5F3ED;
+}
+
+.livros-titulo {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 36px;
+    color: #57290B;
+    margin-left: 80px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.livros-subtitulo {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    color: #8F542E;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.livros-galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.livros-linha {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.livro-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 260px;
+}
+
+.livro-card img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
