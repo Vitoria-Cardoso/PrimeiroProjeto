@@ -463,3 +463,60 @@ button:hover {
     border-radius: 8px;
     object-fit: cover;
 }
+
+.cafeteria {
+    background: #B2784A;
+    padding: 60px 0;
+}
+
+.cafeteria-titulo {
+    color: #fff;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.cafeteria-carrossel {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.cafeteria-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    width: 300px;
+    padding: 0px 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cafeteria-img {
+    width: 300px;
+    height: 180px;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.cafeteria-card-titulo {
+    font-size: 16px;
+    color: #B2784A;
+    font-family: "Cormorant Garamond", serif;
+    margin: 0 0 8px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cafeteria-card-desc {
+    font-size: 14px;
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    margin: 0;
+}
