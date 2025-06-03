@@ -252,9 +252,132 @@ button:hover {
     transition: color 0.2s;
 }
 
+.contato-links a:hover {
+    color: #cf7b44;
+}
+
 
 .contato-links img {
     width: 28px;
     height: 28px;
     vertical-align: middle;
+}
+
+
+/* --- Estilos: TRABALHE CONOSCO --- */ 
+
+
+.banner-trabalhe-conosco .hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-trabalhe-conosco{
+    width: 100%;
+    background-image: url(assets/background_trabalhe_conosco.jpg);
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner-trabalhe-conosco h1{
+    white-space: nowrap;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    color: #EBDACC;
+    font-size: 80px;
+}
+
+.curriculo-link {
+    background: #F5F3ED;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.curriculo-link h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #1F0C00;
+    margin-bottom: 24px;
+}
+
+.curriculo-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #1F0C00;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    transition: color 0.2s;
+    margin-top: 16px;
+}
+
+.curriculo-link a:hover {
+    color: #cf7b44;
+}
+
+.curriculo-link img {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+}
+
+.time {
+    background: #80451F;
+    padding: 60px 0 60px 0;
+}
+
+.time h2 {
+    color: #fff;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.time-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.card-membro {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    display: flex;
+    align-items: center;
+    padding: 24px 32px;
+    max-width: 900px;
+    width: 100%;
+    gap: 24px;
+}
+
+.membro-foto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #80451F;
+}
+
+.membro-info h3 {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    color: #80451F;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.membro-info p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
 }
