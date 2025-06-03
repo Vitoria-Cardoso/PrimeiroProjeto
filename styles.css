@@ -549,7 +549,7 @@ button:hover {
 .contato-form-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 48px;
     max-width: 800px;
     width: 100%;
@@ -576,6 +576,8 @@ button:hover {
     gap: 16px;
     flex: 1;
     min-width: 260px;
+    max-width: 500px;
+    width: 100%;
 }
 
 .contato-form label {
