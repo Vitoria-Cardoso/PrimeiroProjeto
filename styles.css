@@ -520,3 +520,103 @@ button:hover {
     text-align: center;
     margin: 0;
 }
+
+
+/* --- Estilos: Fale Conosco --- */ 
+
+.banner-quem-somos{
+    background-image: url(assets/BackGround_Fale_conosco.png);
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner-quem-somos h1{
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    color: #EBDACC;
+    font-size: 80px;
+}
+
+.contato-form-section {
+    background: #F5F3ED;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contato-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 24px;
+}
+
+.contato-form-titulo {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    color: #80451F;
+    font-weight: bold;
+    margin-right: 40px;
+    min-width: 220px;
+    text-align: left;
+}
+
+.contato-form {
+    background: #B2784A;
+    border-radius: 16px;
+    padding: 32px 32px 24px 32px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    min-width: 260px;
+}
+
+.contato-form label {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 8px;
+    background: #fff;
+    color: #333;
+    resize: vertical;
+}
+
+.contato-form textarea {
+    min-height: 80px;
+}
+
+.contato-form button {
+    background: #8F542E;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 8px;
+}
+
+.contato-form button:hover {
+    background: #a05929;
+}
