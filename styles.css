@@ -365,7 +365,6 @@ button:hover {
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #80451F;
 }
 
 .membro-info h3 {
