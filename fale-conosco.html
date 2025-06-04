@@ -1,66 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fale Conosco</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fale Conosco</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<!-- A tag Header define a sessao da barra superior de navegacao -->
+				<nav class="navbar">
+					<div class="logo">
+						<img src="assets/logo.png" alt="Logo da Empresa" class="logo-img" />
+					</div>
+					<ul class="nav-links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="fale-conosco.html">Fale Conosco</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+						<li><a href="quem-somos.html">Quem Somos</a></li>
+					</ul>
+				</nav>
+			</header>
 
-    <header> <!-- A tag Header define a sessao da barra superior de navegacao -->
-        <nav class="navbar">
-            <div class="logo">
-                <img src="assets/logo.png" alt="Logo da Empresa" class="logo-img">
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="fale-conosco.html">Fale Conosco</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
-                <li><a href="quem-somos.html">Quem Somos</a></li>
-            </ul>
-        </nav>
-    </header>
+			<main>
+				<section class="banner banner-quem-somos">
+					<div class="hero">
+						<h1>Fale Conosco</h1>
+					</div>
+				</section>
 
-    <section class="banner banner-quem-somos" >
-        <div class="hero">
-            <h1>Fale Conosco</h1>
-        </div>
-    </section>
+				<section class="contato-form-section">
+					<div class="contato-form-container">
+						<h2 class="contato-form-titulo">Entre em contato</h2>
+						<form class="contato-form">
+							<label for="nome">Nome</label>
+							<input type="text" id="nome" name="nome" required />
 
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" required />
 
-    <section class="contato-form-section">
-        <div class="contato-form-container">
-            <h2 class="contato-form-titulo">Entre em contato</h2>
-            <form class="contato-form">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" required>
-    
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-    
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
+							<label for="mensagem">Mensagem</label>
+							<textarea
+								id="mensagem"
+								name="mensagem"
+								rows="5"
+								required></textarea>
 
+							<button type="submit">Enviar</button>
+						</form>
+					</div>
+				</section>
+			</main>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <img src="assets/logo.png" alt="Logo da Empresa" class="footer-logo">
-            <div class="footer-contact">
-                <p>Entre em contato: (11) 99999-9999</p>
-            </div>
-        </div>
-    </footer>
-
-    
-</body>
+			<footer class="footer">
+				<div class="footer-content">
+					<img
+						src="assets/logo.png"
+						alt="Logo da Empresa"
+						class="footer-logo" />
+					<div class="footer-contact">
+						<p>Entre em contato: (11) 99999-9999</p>
+					</div>
+				</div>
+				<div class="footer-dev">
+					<p>Desenvolvido por Vitória Cardoso</p>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>

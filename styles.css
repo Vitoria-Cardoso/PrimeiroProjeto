@@ -1,6 +1,5 @@
-
-* {
-    margin: 0;
+body, html {
+    margin: 0 ;
     padding: 0;
     box-sizing: border-box;
 }
@@ -76,6 +75,7 @@ header {
     font-weight: bold;
     color: #f0f0f0;
     text-align: left;
+    margin-bottom: 16px;
 }
 
 .hero p {
@@ -83,9 +83,10 @@ header {
     font-size: 24px;
     color: #f0f0f0;
     text-align: left;
+    margin-top: 16px;
 }
 
-button {
+.btn {
     background-color: #8f542e;
     color: #f0f0f0;
     font-family: "Open Sans", sans-serif;
@@ -96,9 +97,10 @@ button {
     border: none;
     border-radius: 5px;
     transition: background 0.3s;
+    text-decoration: none;
 }
 
-button:hover {
+.btn:hover {
     background-color: #cf7b44;
 }
 
@@ -161,6 +163,14 @@ button:hover {
     font-family: "Open Sans", sans-serif;
     color: #EBDACC;
     text-decoration: none;
+}
+
+.footer-dev {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 14px;
+    color: #EBDACC;
+    opacity: 0.8;
 }
 
 /* --- Estilos: QUEM SOMOS --- */ 
@@ -497,7 +507,7 @@ button:hover {
 }
 
 .cafeteria-img {
-    width: 300px;
+    width: 332px;
     height: 180px;
     border-radius: 16px 16px 0px 0px;
     object-fit: cover;
