@@ -659,7 +659,6 @@ header {
 		top: 60px;
 		left: 0;
 		width: 100vw;
-		z-index: 10;
 		display: none; /* Esconde o menu por padrão */
 	}
 	.navbar:hover .nav-links,
