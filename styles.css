@@ -1,634 +1,862 @@
-body, html {
-    margin: 0 ;
-    padding: 0;
-    box-sizing: border-box;
+body,
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-
 header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #57290B;
-    z-index: 1000;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #57290b;
+	z-index: 1000;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px; /* Altura da navbar */
-    padding: 0 20px;
-    margin-inline: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px; /* Altura da navbar */
+	padding: 0 20px;
+	margin-inline: 20px;
 }
 
 .logo img {
-    height: 80px; /* Tamanho da logo */
+	height: 80px; /* Tamanho da logo */
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+	list-style: none;
+	display: flex;
+	gap: 20px;
 }
 
 .nav-links li {
-    display: inline-block;
+	display: inline-block;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #EBDACC;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 10px;
-    transition: background-color 0.3s ease;
+	text-decoration: none;
+	color: #ebdacc;
+	font-family: "Cormorant Garamond", serif;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 10px;
+	transition: background-color 0.3s ease;
 }
 
 .nav-links a:hover {
-    background-color: #a05929;
-    border-radius: 5px;
+	background-color: #a05929;
+	border-radius: 5px;
 }
 /* define a imagem de fundo do banner */
 .banner {
-    margin-top: 100px;
-    background: url(assets/BackGround.png) no-repeat center center;
-    background-size: cover;
-    min-height: 500px; /* Altura mínima do banner */
-    width: 100%;
-    display: flex;
-    align-items: center; /* Alinha o conteúdo verticalmente */
-    justify-content: start;  /* Alinha o conteúdo horizontalmente */
-    padding-left: 60px;/* Espaçamento interno à esquerda */
-
+	margin-top: 100px;
+	background: url(assets/BackGround.png) no-repeat center center;
+	background-size: cover;
+	min-height: 500px; /* Altura mínima do banner */
+	width: 100%;
+	display: flex;
+	align-items: center; /* Alinha o conteúdo verticalmente */
+	justify-content: start; /* Alinha o conteúdo horizontalmente */
+	padding-left: 60px; /* Espaçamento interno à esquerda */
 }
 
-.hero{
-    width: 600px;
+.hero {
+	width: 600px;
 }
 
 .hero h1 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 56px;
-    font-weight: bold;
-    color: #f0f0f0;
-    text-align: left;
-    margin-bottom: 16px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 56px;
+	font-weight: bold;
+	color: #f0f0f0;
+	text-align: left;
+	margin-bottom: 16px;
 }
 
 .hero p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 24px;
-    color: #f0f0f0;
-    text-align: left;
-    margin-top: 16px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 24px;
+	color: #f0f0f0;
+	text-align: left;
+	margin-top: 16px;
 }
 
 .btn {
-    background-color: #8f542e;
-    color: #f0f0f0;
-    font-family: "Open Sans", sans-serif;
-    margin-top: 24px;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 12px 32px;
-    border: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-    text-decoration: none;
+	background-color: #8f542e;
+	color: #f0f0f0;
+	font-family: "Open Sans", sans-serif;
+	margin-top: 24px;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 12px 32px;
+	border: none;
+	border-radius: 5px;
+	transition: background 0.3s;
+	text-decoration: none;
 }
 
 .btn:hover {
-    background-color: #cf7b44;
+	background-color: #cf7b44;
 }
 
-.sobre-nos{
-    display: flex;
-    align-items: flex-start; /* Alinhados pelo topo*/
-    justify-content: space-between; /* Alinha o conteúdo horizontalmente */
-    gap: 40px;
-    padding: 60px 80px;
-    background-color: #F5F3ED;
-    min-height: 500px;
+.sobre-nos {
+	display: flex;
+	align-items: flex-start; /* Alinhados pelo topo*/
+	justify-content: space-between; /* Alinha o conteúdo horizontalmente */
+	gap: 40px;
+	padding: 60px 80px;
+	background-color: #f5f3ed;
+	min-height: 500px;
 }
 
-.sobre-nos-conteudo{
-    flex: 1;
-    max-width: 600px;
-    color: #1F0C00;
+.sobre-nos-conteudo {
+	flex: 1;
+	max-width: 600px;
+	color: #1f0c00;
 }
 
-.sobre-nos-conteudo h2{
-    font-family: "Cormorant Garamond", serif;
-    font-weight: bold;
-    font-size: 40px;
-    margin-bottom: 18px;
-    text-align: left;
+.sobre-nos-conteudo h2 {
+	font-family: "Cormorant Garamond", serif;
+	font-weight: bold;
+	font-size: 40px;
+	margin-bottom: 18px;
+	text-align: left;
 }
 
-.sobre-nos-conteudo p{
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    color: #333;
-    text-align: left;
+.sobre-nos-conteudo p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	color: #333;
+	text-align: left;
 }
 
 .footer {
-    background-color: #57290B;
-    color: #F0F0F0;
-    padding: 32px 0;
-    text-align: center;
-
+	background-color: #57290b;
+	color: #f0f0f0;
+	padding: 32px 0;
+	text-align: center;
 }
 
 .footer-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    width: 100%;
-    gap: 32px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	width: 100%;
+	gap: 32px;
 }
 
 .footer-logo {
-    height: 60px;
+	height: 60px;
 }
 
 .footer-contact {
-    font-family: "Open Sans", sans-serif;
-    color: #EBDACC;
-    text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+	color: #ebdacc;
+	text-decoration: none;
 }
 
 .footer-dev {
-    margin-top: 12px;
-    text-align: center;
-    font-size: 14px;
-    color: #EBDACC;
-    opacity: 0.8;
+	margin-top: 12px;
+	text-align: center;
+	font-size: 14px;
+	color: #ebdacc;
+	opacity: 0.8;
 }
 
-/* --- Estilos: QUEM SOMOS --- */ 
+/* --- Estilos: QUEM SOMOS --- */
 
-.banner-quem-somos{
-    background-image: url(assets/BackGround_QuemSomos.png);
-    align-items: center;
-    justify-content: center;
-
+.banner-quem-somos {
+	background-image: url(assets/BackGround_QuemSomos.png);
+	align-items: center;
+	justify-content: center;
+	padding-left: 0;
 }
 
-.banner-quem-somos h1{
-    text-align: center;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: bold;
-    color: #EBDACC;
-    font-size: 80px;
+.banner-quem-somos h1 {
+	text-align: center;
+	font-family: "Cormorant Garamond", serif;
+	font-weight: bold;
+	color: #ebdacc;
+	font-size: 80px;
 }
 
-.quem-somos{
-    display: flex;
-    align-items: flex-start; /* Alinhados pelo topo*/
-    justify-content: space-between; /* Alinha o conteúdo horizontalmente */
-    gap: 40px;
-    padding: 60px 80px;
-    background-color: #F5F3ED;
-    min-height: 500px;
+.quem-somos {
+	display: flex;
+	align-items: flex-start; /* Alinhados pelo topo*/
+	justify-content: space-between; /* Alinha o conteúdo horizontalmente */
+	gap: 40px;
+	padding: 60px 80px;
+	background-color: #f5f3ed;
+	min-height: 500px;
 }
 
-.quem-somos-conteudo{
-    flex: 1;
-    max-width: 600px;
-    color: #1F0C00;
+.quem-somos-conteudo {
+	flex: 1;
+	max-width: 600px;
+	color: #1f0c00;
 }
 
-.quem-somos-conteudo h2{
-    font-family: "Cormorant Garamond", serif;
-    font-weight: bold;
-    font-size: 40px;
-    margin-bottom: 18px;
-    text-align: left;
+.quem-somos-conteudo h2 {
+	font-family: "Cormorant Garamond", serif;
+	font-weight: bold;
+	font-size: 40px;
+	margin-bottom: 18px;
+	text-align: left;
 }
 
-.quem-somos-conteudo p{
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    color: #333;
-    text-align: left;
+.quem-somos-conteudo p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	color: #333;
+	text-align: left;
 }
 
 .contato-links {
-    background: #F5F3ED;
-    padding: 40px 0;
-    text-align: center;
+	background: #f5f3ed;
+	padding: 40px 0;
+	text-align: center;
 }
 
 .contato-links h2 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 32px;
-    font-weight: bold;
-    color: #1F0C00;
-    margin-bottom: 24px;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 32px;
+	font-weight: bold;
+	color: #1f0c00;
+	margin-bottom: 24px;
 }
 
 .contato-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	flex-wrap: wrap;
 }
 
 .contato-links li {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
 }
 
-
-
 .contato-links a {
-    color: #1F0C00;
-    align-items: center;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: "Open Sans", sans-serif;
-    transition: color 0.2s;
+	color: #1f0c00;
+	align-items: center;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: "Open Sans", sans-serif;
+	transition: color 0.2s;
 }
 
 .contato-links a:hover {
-    color: #cf7b44;
+	color: #cf7b44;
 }
-
 
 .contato-links img {
-    width: 28px;
-    height: 28px;
-    vertical-align: middle;
+	width: 28px;
+	height: 28px;
+	vertical-align: middle;
 }
 
-
-/* --- Estilos: TRABALHE CONOSCO --- */ 
-
+/* --- Estilos: TRABALHE CONOSCO --- */
 
 .banner-trabalhe-conosco .hero {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.banner-trabalhe-conosco{
-    width: 100%;
-    background-image: url(assets/background_trabalhe_conosco.jpg);
-    align-items: center;
-    justify-content: center;
-
+.banner-trabalhe-conosco {
+	width: 100%;
+	background-image: url(assets/background_trabalhe_conosco.jpg);
+	align-items: center;
+	justify-content: center;
+	padding-left: 0px;
 }
 
-.banner-trabalhe-conosco h1{
-    white-space: nowrap;
-    text-align: center;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: bold;
-    color: #EBDACC;
-    font-size: 80px;
+.banner-trabalhe-conosco h1 {
+	white-space: nowrap;
+	text-align: center;
+	font-family: "Cormorant Garamond", serif;
+	font-weight: bold;
+	color: #ebdacc;
+	font-size: 80px;
 }
 
 .curriculo-link {
-    background: #F5F3ED;
-    padding: 40px 0;
-    text-align: center;
+	background: #f5f3ed;
+	padding: 40px 0;
+	text-align: center;
 }
 
 .curriculo-link h2 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 32px;
-    font-weight: bold;
-    color: #1F0C00;
-    margin-bottom: 24px;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 32px;
+	font-weight: bold;
+	color: #1f0c00;
+	margin-bottom: 24px;
 }
 
 .curriculo-link a {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: #1F0C00;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: "Open Sans", sans-serif;
-    transition: color 0.2s;
-    margin-top: 16px;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	color: #1f0c00;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: "Open Sans", sans-serif;
+	transition: color 0.2s;
+	margin-top: 16px;
 }
 
 .curriculo-link a:hover {
-    color: #cf7b44;
+	color: #cf7b44;
 }
 
 .curriculo-link img {
-    width: 28px;
-    height: 28px;
-    vertical-align: middle;
+	width: 28px;
+	height: 28px;
+	vertical-align: middle;
 }
 
 .time {
-    background: #80451F;
-    padding: 60px 0 60px 0;
+	background: #80451f;
+	padding: 60px 0 60px 0;
 }
 
 .time h2 {
-    color: #fff;
-    text-align: center;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 40px;
-    margin-bottom: 40px;
-    font-weight: bold;
+	color: #fff;
+	text-align: center;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 40px;
+	margin-bottom: 40px;
+	font-weight: bold;
 }
 
 .time-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
 }
 
 .card-membro {
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
-    display: flex;
-    align-items: center;
-    padding: 24px 32px;
-    max-width: 900px;
-    width: 100%;
-    gap: 24px;
+	background: #fff;
+	border-radius: 18px;
+	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+	display: flex;
+	align-items: center;
+	padding: 24px 32px;
+	max-width: 900px;
+	width: 100%;
+	gap: 24px;
 }
 
 .membro-foto {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
 }
 
 .membro-info h3 {
-    margin: 0 0 8px 0;
-    font-size: 24px;
-    color: #80451F;
-    font-family: "Cormorant Garamond", serif;
+	margin: 0 0 8px 0;
+	font-size: 24px;
+	color: #80451f;
+	font-family: "Cormorant Garamond", serif;
 }
 
 .membro-info p {
-    margin: 0;
-    color: #333;
-    font-size: 16px;
-    font-family: "Open Sans", sans-serif;
+	margin: 0;
+	color: #333;
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
 }
 
-
-/* --- Estilos: Servicos e produtos --- */ 
+/* --- Estilos: Servicos e produtos --- */
 
 .banner-produtos .hero {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.banner-produtos{
-    width: 100%;
-    background-image: url(assets/BackGround_Produtos.png);
-    align-items: center;
-    justify-content: center;
-    padding-left: 0;
-
+.banner-produtos {
+	width: 100%;
+	background-image: url(assets/BackGround_Produtos.png);
+	align-items: center;
+	justify-content: center;
+	padding-left: 0;
 }
 
-.banner-produtos h1{
-    white-space: nowrap;
-    text-align: center;
-    margin: 0 auto;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: bold;
-    color: #57290B;
-    font-size: 80px;
+.banner-produtos h1 {
+	white-space: nowrap;
+	text-align: center;
+	margin: 0 auto;
+	font-family: "Cormorant Garamond", serif;
+	font-weight: bold;
+	color: #57290b;
+	font-size: 80px;
 }
 
 .livros {
-    padding: 60px 0 40px 0;
-    background: #F5F3ED;
+	padding: 60px 0 40px 0;
+	background: #f5f3ed;
 }
 
 .livros-titulo {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 36px;
-    color: #57290B;
-    margin-left: 80px;
-    margin-bottom: 8px;
-    text-align: left;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 36px;
+	color: #57290b;
+	margin-left: 80px;
+	margin-bottom: 8px;
+	text-align: left;
 }
 
 .livros-subtitulo {
-    font-family: "Open Sans", sans-serif;
-    font-size: 24px;
-    color: #8F542E;
-    text-align: center;
-    margin-bottom: 32px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 24px;
+	color: #8f542e;
+	text-align: center;
+	margin-bottom: 32px;
 }
 
 .livros-galeria {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
 }
 
 .livros-linha {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+	display: flex;
+	justify-content: center;
+	gap: 40px;
 }
 
 .livro-card {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    padding: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 180px;
-    height: 260px;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+	padding: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 180px;
+	height: 260px;
 }
 
 .livro-card img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 8px;
-    object-fit: cover;
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 8px;
+	object-fit: cover;
 }
 
 .cafeteria {
-    background: #B2784A;
-    padding: 60px 0;
+	background: #b2784a;
+	padding: 60px 0;
 }
 
 .cafeteria-titulo {
-    color: #fff;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 40px;
-    font-weight: bold;
+	color: #fff;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 40px;
+	font-weight: bold;
 }
 
 .cafeteria-carrossel {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	gap: 32px;
+	flex-wrap: wrap;
 }
 
 .cafeteria-card {
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
-    width: 300px;
-    padding: 0px 16px 16px 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	background: #fff;
+	border-radius: 18px;
+	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+	width: 300px;
+	padding: 0px 16px 16px 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .cafeteria-img {
-    width: 332px;
-    height: 180px;
-    border-radius: 16px 16px 0px 0px;
-    object-fit: cover;
-    margin-bottom: 16px;
+	width: 332px;
+	height: 180px;
+	border-radius: 16px 16px 0px 0px;
+	object-fit: cover;
+	margin-bottom: 16px;
 }
 
 .cafeteria-card-titulo {
-    font-size: 16px;
-    color: #B2784A;
-    font-family: "Cormorant Garamond", serif;
-    margin: 0 0 8px 0;
-    text-align: center;
-    font-weight: bold;
+	font-size: 16px;
+	color: #b2784a;
+	font-family: "Cormorant Garamond", serif;
+	margin: 0 0 8px 0;
+	text-align: center;
+	font-weight: bold;
 }
 
 .cafeteria-card-desc {
-    font-size: 14px;
-    color: #333;
-    font-family: "Open Sans", sans-serif;
-    text-align: center;
-    margin: 0;
+	font-size: 14px;
+	color: #333;
+	font-family: "Open Sans", sans-serif;
+	text-align: center;
+	margin: 0;
 }
 
+/* --- Estilos: Fale Conosco --- */
 
-/* --- Estilos: Fale Conosco --- */ 
-
-.banner-quem-somos{
-    background-image: url(assets/BackGround_Fale_conosco.png);
-    align-items: center;
-    justify-content: center;
-
+.banner-quem-somos {
+	background-image: url(assets/BackGround_Fale_conosco.png);
+	align-items: center;
+	justify-content: center;
 }
 
-.banner-quem-somos h1{
-    text-align: center;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: bold;
-    color: #EBDACC;
-    font-size: 80px;
+.banner-quem-somos h1 {
+	text-align: center;
+	font-family: "Cormorant Garamond", serif;
+	font-weight: bold;
+	color: #ebdacc;
+	font-size: 80px;
 }
 
 .contato-form-section {
-    background: #F5F3ED;
-    padding: 60px 0;
-    display: flex;
-    justify-content: center;
+	background: #f5f3ed;
+	padding: 60px 0;
+	display: flex;
+	justify-content: center;
 }
 
 .contato-form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
-    max-width: 800px;
-    width: 100%;
-    margin: 0 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 48px;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 24px;
 }
 
 .contato-form-titulo {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 32px;
-    color: #80451F;
-    font-weight: bold;
-    margin-right: 40px;
-    min-width: 220px;
-    text-align: left;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 32px;
+	color: #80451f;
+	font-weight: bold;
+	margin-right: 40px;
+	min-width: 220px;
+	text-align: left;
 }
 
 .contato-form {
-    background: #B2784A;
-    border-radius: 16px;
-    padding: 32px 32px 24px 32px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    flex: 1;
-    min-width: 260px;
-    max-width: 500px;
-    width: 100%;
+	background: #b2784a;
+	border-radius: 16px;
+	padding: 32px 32px 24px 32px;
+	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	flex: 1;
+	min-width: 260px;
+	max-width: 500px;
+	width: 100%;
 }
 
 .contato-form label {
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    margin-bottom: 4px;
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	margin-bottom: 4px;
 }
 
 .contato-form input,
 .contato-form textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 6px;
-    border: none;
-    font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-    margin-bottom: 8px;
-    background: #fff;
-    color: #333;
-    resize: vertical;
+	width: 100%;
+	padding: 10px;
+	border-radius: 6px;
+	border: none;
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	margin-bottom: 8px;
+	background: #fff;
+	color: #333;
+	resize: vertical;
 }
 
 .contato-form textarea {
-    min-height: 80px;
+	min-height: 80px;
 }
 
 .contato-form button {
-    background: #8F542E;
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 12px 0;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.2s;
-    margin-top: 8px;
+	background: #8f542e;
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 12px 0;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background 0.2s;
+	margin-top: 8px;
 }
 
 .contato-form button:hover {
-    background: #a05929;
+	background: #a05929;
+}
+
+/* --- Estilos: Responsividade --- */
+
+/* Responsividade geral */
+@media (max-width: 900px) {
+	.container {
+		padding: 0 10px;
+	}
+	.banner .hero h1 {
+		font-size: 32px;
+	}
+	.sobre-nos {
+		flex-direction: column;
+		padding: 40px 10px;
+		gap: 24px;
+	}
+	.sobre-nos-imagem img {
+		width: 100%;
+		max-width: 350px;
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+/* Navbar responsiva */
+@media (max-width: 700px) {
+	.nav-links {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 8px;
+		font-size: 16px;
+		padding: 0;
+		margin: 0;
+		background: #fff8f0;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 100vw;
+		z-index: 10;
+		display: none; /* Esconde o menu por padrão */
+	}
+	.navbar:hover .nav-links,
+	.navbar:focus-within .nav-links {
+		display: flex; /* Mostra ao passar mouse ou focar */
+	}
+	.navbar {
+		position: relative;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.logo-img {
+		height: 40px;
+	}
+}
+
+/* Navbar: mostra menu sempre em telas médias */
+@media (min-width: 701px) {
+	.nav-links {
+		display: flex !important;
+		flex-direction: row;
+		gap: 24px;
+		position: static;
+		background: none;
+		width: auto;
+	}
+}
+
+/* Footer responsivo */
+@media (max-width: 700px) {
+	.footer-content {
+		flex-direction: column;
+		gap: 12px;
+	}
+	.footer-logo {
+		height: 40px;
+	}
+}
+
+/* Ajusta botões e textos */
+@media (max-width: 500px) {
+	.btn {
+		font-size: 14px;
+		padding: 10px 18px;
+	}
+	.banner .hero h1 {
+		font-size: 22px;
+	}
+	.sobre-nos-conteudo h2 {
+		font-size: 24px;
+	}
+}
+
+/* --- RESPONSIVIDADE: FALE CONOSCO --- */
+@media (max-width: 900px) {
+	.contato-form-section {
+		padding: 32px 0;
+	}
+	.contato-form-container {
+		max-width: 98vw;
+		padding: 0 8px;
+	}
+}
+
+@media (max-width: 600px) {
+	.contato-form-container {
+		padding: 0 4px;
+	}
+	.contato-form-titulo {
+		font-size: 22px;
+		min-width: unset;
+		margin-right: 0;
+		margin-bottom: 16px;
+		text-align: center;
+		width: 100%;
+	}
+	.contato-form {
+		padding: 18px 8px 12px 8px;
+		min-width: 0;
+	}
+	.contato-form label,
+	.contato-form input,
+	.contato-form textarea,
+	.contato-form button {
+		font-size: 15px;
+	}
+}
+
+/* --- RESPONSIVIDADE: PRODUTOS --- */
+
+/* Livros: cards empilham em telas pequenas */
+@media (max-width: 900px) {
+	.livros-galeria {
+		gap: 20px;
+	}
+	.livros-linha {
+		gap: 20px;
+	}
+}
+@media (max-width: 700px) {
+	.livros-linha {
+		flex-direction: column;
+		align-items: center;
+		gap: 16px;
+	}
+	.livro-card {
+		width: 90vw;
+		max-width: 300px;
+	}
+	.livros-titulo,
+	.livros-subtitulo {
+		margin-left: 0;
+		text-align: center;
+	}
+}
+
+/* Cafeteria: carrossel empilha cards */
+@media (max-width: 900px) {
+	.cafeteria-carrossel {
+		gap: 20px;
+	}
+}
+@media (max-width: 700px) {
+	.cafeteria-carrossel {
+		flex-direction: column;
+		align-items: center;
+		gap: 16px;
+	}
+	.cafeteria-card {
+		width: 90vw;
+		max-width: 300px;
+	}
+	.cafeteria-titulo {
+		font-size: 24px;
+	}
+}
+
+/* --- RESPONSIVIDADE: QUEM SOMOS--- */
+@media (max-width: 900px) {
+	.quem-somos {
+		flex-direction: column;
+		gap: 24px;
+		padding: 40px 10px;
+	}
+	.quem-somos-imagem img {
+		width: 100%;
+		max-width: 350px;
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+@media (max-width: 600px) {
+	.quem-somos-conteudo h2 {
+		font-size: 24px;
+		text-align: center;
+	}
+	.quem-somos-conteudo p {
+		font-size: 16px;
+	}
+}
+
+/* --- RESPONSIVIDADE: TRABALHE CONOSCO (sem navbar e footer) --- */
+@media (max-width: 900px) {
+	.time-cards {
+		flex-direction: column;
+		align-items: center;
+		gap: 24px;
+	}
+	.card-membro {
+		max-width: 95vw;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 18px 8px;
+	}
+	.membro-foto {
+		margin-bottom: 12px;
+	}
+	.curriculo-link a {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 600px) {
+	.time h2,
+	.curriculo-link h2 {
+		font-size: 22px;
+		text-align: center;
+	}
+	.card-membro h3 {
+		font-size: 18px;
+	}
+	.card-membro p {
+		font-size: 15px;
+	}
+	.curriculo-link a {
+		font-size: 14px;
+	}
 }
